@@ -1,7 +1,7 @@
 using UnityEngine;
 
 namespace Challenge {
-    public interface ILevel {
+    interface ILevel {
         void Initialize();
         void UpdateLevel();
     }

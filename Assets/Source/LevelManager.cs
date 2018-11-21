@@ -8,7 +8,7 @@ namespace Challenge {
 		#region Private Members
 
 		[SerializeField]
-		ILevel _levelController;
+		private Level _levelController;
 
 		#endregion
 
@@ -23,7 +23,8 @@ namespace Challenge {
 		}
 
 		void Update () {
-			_levelController.UpdateLevel();
+			if (_levelController != null)
+				_levelController.UpdateLevel();
 		}
 
 		#endregion

@@ -36,6 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4439253973815894}
+  - component: {fileID: 114911464876289868}
   m_Layer: 0
   m_Name: Light Bulb
   m_TagString: Untagged
@@ -88,6 +89,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114911464876289868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945657822414450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545ea60c44b56114eb0113e9ba5e2467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulbAnimator: {fileID: 95078580558806832}
+  _bulbOnOffParameter: LightBulbOn
 --- !u!212 &212897326954687386
 SpriteRenderer:
   m_ObjectHideFlags: 1
