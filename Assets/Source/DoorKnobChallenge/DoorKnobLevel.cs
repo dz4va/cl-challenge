@@ -5,14 +5,19 @@ using UnityEngine;
 namespace Challenge {
 	public class DoorKnobLevel : Level {
 
-		// Use this for initialization
-		void Start () {
-			
-		}
+		#region Private Members
 		
-		// Update is called once per frame
-		void Update () {
-			
-		}
+		
+		
+		#endregion
+
+		#region Public Methods
+        
+        public override void Initialize() {
+            base.Initialize();
+        }
+        
+        #endregion
+
 	}
 }
