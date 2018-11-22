@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545ea60c44b56114eb0113e9ba5e2467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulbAnimator: {fileID: 95078580558806832}
-  _bulbOnOffParameter: LightBulbOn
+  _objectAnimator: {fileID: 95078580558806832}
+  _toggleParameterName: LightBulbOn
 --- !u!212 &212897326954687386
 SpriteRenderer:
   m_ObjectHideFlags: 1
