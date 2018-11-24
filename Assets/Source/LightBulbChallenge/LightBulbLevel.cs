@@ -10,7 +10,7 @@ namespace Challenge {
         LightBulb       _bulb;
 
         [SerializeField]
-        LightBulbButton _bulbButton;
+        CustomSquareButton _bulbButton;
 
         #endregion
 

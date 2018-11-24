@@ -3,24 +3,20 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 namespace Challenge {
-    public class LightBulbButton : MonoBehaviour {
-
-        #region Public Members
-        
-        public event UnityAction OnClick = delegate{};
-        
-        #endregion
+    public class CustomSquareButton : MonoBehaviour {
 
         #region Private Members
         
         [SerializeField]
-        Button  _button;
+        Button      _button;
         [SerializeField]
-        Image   _buttonImage;
+        Image       _buttonImage;
         [SerializeField]
-        Sprite  _normalStateSprite;
+        Sprite      _normalStateSprite;
         [SerializeField]
-        Sprite  _toggleStateSprite;
+        Sprite      _toggleStateSprite;
+        [SerializeField]
+        Animator    _buttonAnimator;
         
         #endregion
 
@@ -36,12 +32,20 @@ namespace Challenge {
 
         public void ToggleState(bool on) {
             if (_buttonImage == null) {
-                Debug.LogError(string.Format("Image component not found on {0}", name));
+                Debug.LogError(string.Format("Image component not assigned on {0}", name));
                 return;
             }
             _buttonImage.sprite = on ? _toggleStateSprite : _normalStateSprite;
         }
-        
+
+        public void RunClickAnimation(string animationName) {
+            if (_buttonAnimator == null) {
+                Debug.LogError(string.Format("Animator component not assigned on {0}", name));
+                return;
+            }
+            _buttonAnimator.Play(animationName, -1, 0);
+        }
+
         #endregion
 
     }

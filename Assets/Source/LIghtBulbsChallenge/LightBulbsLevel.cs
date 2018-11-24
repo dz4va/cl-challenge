@@ -9,7 +9,7 @@ namespace Challenge {
         LightBulb[]       _bulbs;
 
         [SerializeField]
-        LightBulbButton _bulbButton;
+        CustomSquareButton _bulbButton;
 
         int _currentBulbIndex;
         int _previousBulbIndex;
